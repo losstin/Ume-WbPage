@@ -11848,3 +11848,12 @@ width: 100%;
 .top-bar .left-off-canvas-toggle.menu-icon button {
 	background: transparent;
 }
+
+
+/* МАНАС */
+h3.sans {
+	text-transform: capitalize;
+}
+.link-slideup h3 {
+	
+}
