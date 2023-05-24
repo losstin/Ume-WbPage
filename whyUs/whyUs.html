@@ -10,238 +10,268 @@
     <link rel="stylesheet" href="../css/app.v68.css">
     <link rel="stylesheet" href="../css/normalize.min.css">
     <link rel="icon" href="https://manas.edu.kg/logo/Manas_logo.png">
+    	
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+	<link crossorigin="anonymous" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" rel="stylesheet" />
+	<!-- СSS -->
+    <link rel="stylesheet" href="./whyUs.css">
 </head>
 
 <body>
     <div class="off-canvas-wrap">
         <div aria-label="header" class="fixed off-canvas-fixed" role="navigation">
-            <a class="skipnav js-skipnav sr-only" href="#contentarea">Skip Navigation</a>
+			<a class="skipnav js-skipnav sr-only" href="#contentarea">Skip Navigation</a>
+
+			<div class="site-title" id="site-title">
+				<div class="row site-title-layout">
+					<section aria-label="Site Title" class="site-title-name">
+						<div class="manas">
+							<a href="../index.html">Манас университети</a>
+						</div>
+					</section>
+
+					<div id="search-header">
+						<section aria-label="search site" class="site-title-search">
+							<div class="search-title">
+								<span class="custom-dropdown big">
+									<label class="sr-only" for="search-options">Search Options</label>
+									<select id="search-options" name="search-options"></select>
+								</span>
+							</div>
+
+							<form _lpchecked="1" >
+								<div class="search-field">
+									<label class="sr-only" for="searchfield" id="searchfield-label">Search</label>
+									<input aria-labelledby="searchfield-label" id="searchfield" name="cn" placeholder="Издөө..." type="text" />
+								</div>
+								<div class="search-button">
+									<button aria-label="submit search" class="c-button-maroon" type="submit" id="search-btn">										
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span class="sr-only" style="color:#ffffff;">Search</span>
+									</button>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav-wrapper">
+				<nav aria-label="navigation" class="top-bar" data-topbar="topbar">
+					<div class="title-area">
+						<div class="left-off-canvas-toggle menu-icon svg-menu-icon">
+							<button aria-expanded="false">
+								<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
+									title="menu">
+									<use title="menu"
+										xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--menu"
+										xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
+								</svg>
+
+							
+							</button>
+						</div>
+					</div>
+					<div class="header-logo">
+						<div>
+							<a href="index.html">
+								<img alt="University Logo" src="../src/img/Manas_logo.png" width="80%" />
+							</a>
+						</div>
+					</div>
+					<a aria-controls="search" aria-expanded="false" aria-label="View search form"
+						class="icon-search-svg large-icon mobile-search show-for-small-only" tabindex="0">
+						<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
+							<use title="search"
+								xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
+								xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
+						</svg>
+						<strong>
+							<span class="sr-only">Search</span>
+						</strong>
+					</a>
+					<section aria-label="main navigation" class="top-bar-section show-for-large-up" role="navigation">
+						<ul class="left">
+							<li><a href="../index.html">Башкы бет</a></li>
+							<li><a href="../aboutUs/aboutUs.html">Биз жөнүндө</a></li>
+						</ul>
+						<ul class="right">
+							<li><a href="../students/students.html">Студенттер</a></li>
+							<li><a href="../whyUs/whyUs.html">Эмне үчүн КМИ?</a></li>
+						</ul>
+					</section>
+					<a aria-controls="search" aria-expanded="false" aria-label="View search form"
+						class="icon-search-svg large-icon mobile-search show-for-medium-down" href="#search"
+						id="search-label">
+						<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
+							<use title="search"
+								xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
+								xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
+						</svg>
+						<span class="sr-only" style="color:#ffffff;">Search</span>
+
+					</a>
+				</nav>
+			</div>
+			<nav aria-label="audience navigation" class="audience">
+				<section aria-label="navigation by audience" class="show-for-large-up" role="navigation">
+					<ul>
+						<li>
+							<a href="../professors/professors.html">Мугалимдер</a>
+						</li>
+						<li>
+							<a href="../graduates/graduates.html">Бүтүүрүчүлөр</a>
+						</li>
+						<li>
+							<a href="../admissions/admissions.html">Абитуриенттерге</a>
+						</li>
+						
+					</ul>
+				</section>
+			</nav>
 
 
-            <div class="site-title">
-                <div class="row site-title-layout">
-                    <section aria-label="Site Title" class="site-title-name">
-                        <div class="tamu">
-                            <a href="../index.html">Манас университети</a>
-                        </div>
-                    </section>
+			<div aria-hidden="true" id="search">
+				<div class="search-layout">
+					<div class="centered-content">
+						<div class="search-layout-content">
+							<div class="search-title">
+								<span class="custom-dropdown big">
+									<label class="sr-only" for="search-options-mobile">Search Options</label>
+									<select id="search-options-mobile" name="search-options">
+										<option>Web</option>
+										<option>People</option>
+									</select>
+								</span>
+							</div>
+							<form action="../search/index.html" method="get">
+								<div class="search-field">
+									<input aria-labelledby="searchfieldmobile-label" id="searchfieldmobile" name="q"
+										placeholder="Search..." type="text" />
+									<label class="sr-only" for="searchfieldmobile"
+										id="searchfieldmobile-label">Search</label>
 
-                    <div id="search-header">
-
-                        <section aria-label="search site" class="site-title-search">
-                            <div class="search-title">
-                                <span class="custom-dropdown big">
-                                    <label class="sr-only" for="search-options">Search Options</label>
-                                    <select id="search-options" name="search-options">
-                                        <option>Web</option>
-                                        <option>People</option>
-                                    </select>
-                                </span>
-                            </div>
-
-                            <form _lpchecked="1" action="https://directory.tamu.edu/" method="get">
-                                <div class="search-field">
-                                    <label class="sr-only" for="searchfield" id="searchfield-label">Search</label>
-                                    <input aria-labelledby="searchfield-label" id="searchfield" name="cn"
-                                        placeholder="Издөө..." type="text" />
-                                </div>
-                                <div class="search-button">
-                                    <button aria-label="submit search" class="c-button-maroon" type="submit">
-                                        <svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
-                                            title="search">
-                                            <use title="search"
-                                                xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-                                        </svg>
-                                        <span class="sr-only" style="color:#ffffff;">Search</span>
-                                    </button>
-                                </div>
-
-
-                            </form>
-
-                        </section>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="nav-wrapper">
-                <nav aria-label="navigation" class="top-bar" data-topbar="topbar">
-                    <div class="title-area">
-                        <div class="left-off-canvas-toggle menu-icon svg-menu-icon">
-                            <button aria-expanded="false">
-                                <svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
-                                    title="menu">
-                                    <use title="menu"
-                                        xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--menu"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-                                </svg>
-
-                                <span>MENU</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="header-logo">
-                        <div>
-                            <a href="../index.html">
-                                <img alt="Texas A&amp;M University Logo"
-                                    src="https://manas.edu.kg/logo/Manas_logo.png" />
-                            </a>
-                        </div>
-                    </div>
-                    <a aria-controls="search" aria-expanded="false" aria-label="View search form"
-                        class="icon-search-svg large-icon mobile-search show-for-small-only" tabindex="0">
-                        <svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
-                            <use title="search"
-                                xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-                        </svg>
-                        <strong>
-                            <span class="sr-only">Search</span>
-                        </strong>
-                    </a>
-                    <section aria-label="main navigation" class="top-bar-section show-for-large-up" role="navigation">
-                        <ul class="left">
-                            <li>
-
-                                <a href="../ındex.html">Башкы бет</a>
-                            </li>
-                            <li>
-                                <a href="../education/education.html">Билим берүү</a>
-                            </li>
-
-                        </ul>
-                        <ul class="right">
-                            <li>
-                                <a href="../research/research.html">Изилдөөлөр</a>
-                            </li>
-                            <li>
-                                <a href="./whyUs.html">Эмне үчүн КМИ?</a>
-                            </li>
-
-                        </ul>
-                    </section>
-                    <a aria-controls="search" aria-expanded="false" aria-label="View search form"
-                        class="icon-search-svg large-icon mobile-search show-for-medium-down" href="#search"
-                        id="search-label">
-                        <svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
-                            <use title="search"
-                                xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-                        </svg>
-                        <span class="sr-only" style="color:#ffffff;">Search</span>
-
-                    </a>
-                </nav>
-            </div>
-            <nav aria-label="audience navigation" class="audience">
-                <section aria-label="navigation by audience" class="show-for-large-up" role="navigation">
-                    <ul>
-                        <li>
-                            <a href="../professors/professors.html">Мугалимдер</a>
-                        </li>
-                        <li>
-                            <a href="../students/students.html">Студенттер</a>
-                        </li>
-                        <li>
-                            <a href="../admissions/admissions.html">Тапшыруучулар</a>
-                        </li>
-                        <li>
-                            <a href="../graduates/graduates.html">Бүтүүрүчүлөр</a>
-                        </li>
-                        <li>
-                            <a href="../achievements/achievements.html">Жетишкендиктер</a>
-                        </li>
-                    </ul>
-                </section>
-            </nav>
-
-
-            <div aria-hidden="true" id="search">
-                <div class="search-layout">
-                    <div class="centered-content">
-                        <div class="search-layout-content">
-                            <div class="search-title">
-                                <span class="custom-dropdown big">
-                                    <label class="sr-only" for="search-options-mobile">Search Options</label>
-                                    <select id="search-options-mobile" name="search-options">
-                                        <option>Web</option>
-                                        <option>People</option>
-                                    </select>
-                                </span>
-                            </div>
-                            <form action="../search/index.html" method="get">
-                                <div class="search-field">
-                                    <input aria-labelledby="searchfieldmobile-label" id="searchfieldmobile" name="q"
-                                        placeholder="Search..." type="text" />
-                                    <label class="sr-only" for="searchfieldmobile"
-                                        id="searchfieldmobile-label">Search</label>
-
-                                </div>
-                                <div class="search-button">
-                                    <button aria-label="Search" class="button secondary radius postfix" type="submit">
-                                        <svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
-                                            title="search">
-                                            <use title="search"
-                                                xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-                                        </svg>
-                                        <span class="sr-only" style="color:#ffffff;">Search</span>
-                                    </button>
-                                </div>
-                            </form>
-                            <button class="search-close-button js-close-search" type="button">Close Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!-- Appearing sub menu -->
-            <div aria-hidden="true" aria-label="academics quick links" class="submenu-appear hide-for-small-only">
-                <div class="row">
-                    <ul class="sub-nav">
-                        <li><a href="#undergrad-edu" tabindex="-1">Undergraduate Education</a></li>
-                        <li><a href="#depts-progs" tabindex="-1">Departments and Programs</a></li>
-                        <li><a href="#grad-edu" tabindex="-1">Graduate &amp; Professional Education</a></li>
-                        <li><a href="#int-edu" tabindex="-1">International Education</a></li>
-                        <li><a href="#library" tabindex="-1">Libraries</a></li>
-                    </ul>
-                </div>
-            </div><!-- / End sub menu -->
-            <aside aria-hidden="true" aria-label="mobile navigation" class="left-off-canvas-menu" id="offcanvas-menu">
-                <ul class="off-canvas-list" id="mainlinks">
-                    <li><label>Menu</label></li>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="../about/index.html">About</a></li>
-                    <li><a href="../admissions/index.html">Admissions</a></li>
-                    <li><a href="index.html">Academics</a></li>
-                    <li><a href="../athletics/index.html">Athletics</a></li>
-                    <li><a href="../research/index.html">Research</a></li>
-                    <li><a href="../student-life/index.html">Student Life</a></li>
-                </ul>
-                <ul class="off-canvas-list off-canvas-sublist">
-                    <li><label>Info For:</label></li>
-                    <li><a href="../future-students/index.html">Future Students</a></li>
-                    <li><a href="../current-students/index.html">Current Students</a></li>
-                    <li><a href="../faculty-staff/index.html">Faculty &amp; Staff</a></li>
-                    <li><a href="../parents/index.html">Parents</a></li>
-                    <li><a href="../visitors/index.html">Visitors</a></li>
-                    <li><a href="../former-students/index.html">Former Students</a></li>
-                    <li><a href="https://www.txamfoundation.com/" tabindex="0">Make a Gift</a></li>
-                </ul>
-            </aside>
-        </div>
+								</div>
+								<div class="search-button">
+									<button aria-label="Search" class="button secondary radius postfix" type="submit">
+										<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
+											title="search">
+											<use title="search"
+												xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
+												xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
+										</svg>
+										<span class="sr-only" style="color:#ffffff;">Search</span>
+									</button>
+								</div>
+							</form>
+							<button class="search-close-button js-close-search" type="button">Close Search</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Appearing sub menu -->
+			<div aria-hidden="true" aria-label="academics quick links" class="submenu-appear hide-for-small-only">
+				<div class="row">
+					<ul class="sub-nav">
+						<li><a href="#undergrad-edu" tabindex="-1">Undergraduate Education</a></li>
+						<li><a href="#depts-progs" tabindex="-1">Departments and Programs</a></li>
+						<li><a href="#grad-edu" tabindex="-1">Graduate &amp; Professional Education</a></li>
+						<li><a href="#int-edu" tabindex="-1">International Education</a></li>
+						<li><a href="#library" tabindex="-1">Libraries</a></li>
+					</ul>
+				</div>
+			</div><!-- / End sub menu -->
+			<aside aria-hidden="true" aria-label="mobile navigation" class="left-off-canvas-menu" id="offcanvas-menu">
+				<ul class="off-canvas-list" id="mainlinks">
+					<li><label>Menu</label></li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="../about/index.html">About</a></li>
+					<li><a href="../admissions/index.html">Admissions</a></li>
+					<li><a href="index.html">Academics</a></li>
+					<li><a href="../athletics/index.html">Athletics</a></li>
+					<li><a href="../research/index.html">Research</a></li>
+					<li><a href="../student-life/index.html">Student Life</a></li>
+				</ul>
+				<ul class="off-canvas-list off-canvas-sublist">
+					<li><label>Info For:</label></li>
+					<li><a href="../future-students/index.html">Future Students</a></li>
+					<li><a href="../current-students/index.html">Current Students</a></li>
+					<li><a href="../faculty-staff/index.html">Faculty &amp; Staff</a></li>
+					<li><a href="../parents/index.html">Parents</a></li>
+					<li><a href="../visitors/index.html">Visitors</a></li>
+					<li><a href="../former-students/index.html">Former Students</a></li>
+					<li><a href="https://www.txamfoundation.com/" tabindex="0">Make a Gift</a></li>
+				</ul>
+			</aside>
+		</div>
         <main class="inner-wrap" id="contentarea" tabindex="-1">
             <!-- FLYOUT START -->
 
             <!-- FLYOUT END -->
             <a class="exit-off-canvas"></a>
     </div>
-</body>
 
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="banner-text">
+          <h1>Flexbox Banner</h1>
+          <h3>Perfectly Centered</h3>
+          <h6>No matter how many lines of text you use.</h6>
+        </div>
+      </div>
+
+
+    <!-- INFORMATION -->
+
+    <div class="information">
+        <div class="information-container">
+            <h1 >Эмне үчүн Колдонмо Математика жана Информатика?</h1>
+            <h3 >Колдонмо математика жана информатика</h3>
+            <br>Колдонмо математика жана информатика - бул экономика, илим, технология жана башка көптөгөн тармактардагы татаал маселелерди чечүүгө мүмкүндүк берген заманбап жана тез өнүгүп жаткан билим чөйрөсү.
+                Бул бөлумду аяктагандан кийин, студент математикалык моделдөө, маалыматтарды талдоо, программалоо жана башка компьютердик технологиялар боюнча кесиптик көндүмдөргө ээ болот. Алар каржы, медицина, инженерия жана илим сыяктуу ар кандай тармактарда колдонулушу мүмкүн. 
+                Бул окуу чөйрөсүн тандоо, ошондой эле азыркы учурда информатика жана математика адистигине чоң суроо-талап бар экендиги менен байланыштуу, бул бөлүмдүн бүтүрүүчүлөрү үчүн <b> туруктуу жана келечектүү карьераны </b> камсыз кылат.</p>
+            <h3 >Колдонмо математика жана информатика: мүмкүнчүлүктөр</h3>
+            <p >Бул багыт маалыматтык технологияларга жана программалоого тереңдетүү менен прикладдык информатикадан олуттуу айырмаланат. Багыт так илимдер курсун алдыңкы программалоо менен айкалыштырат.
+                Ошону менен катар, студент келечекте адистешүүнүн деңгээлин жогорулатууга жардам бере турган программалоо чөйрөсүнө киргизүү дисциплиналарынын жыйындысын өздөштүрө алат:  </p>
+                <ul>
+                    <li>инновациялык технологияларды практикада колдонуу,татаал алгоритмдерди түзүү </li>
+                    <li> ар кандай программалардын иштеши жана модернизациясы </li>
+                    <li> популярдуу программалоо тилдеринде жазылган программаларды окуй билүү </li>
+                    <li>ар түрдүү математикалык моделдерди түзүү жана ишке ашыруу </li>
+                    <li>изилдөөнүн негизги иштөө методдорун билүү</li>
+                    <li>тапшырмаларды аткаруу үчүн алдыңкы программаны колдонуу</li>
+                    <li>математикадагы бардык инновацияларды түшүнүү физиканын бардык тармактары боюнча терең билим аналитикалык геометрия жана сызыктуу алгебра ыкмаларын колдоно билүү</li>
+                </ul>
+                <p > "КМИ" факультетинде окутуунун жүрүшүндө студенттер илимий жана өндүрүштүк чөйрөдөгү процесстерди моделдөө үчүн математиканын ар кандай методикаларын колдонуу тажрыйбасына ээ болушат. Окутуу процессинде алынган билимдердин негизинде даярдалган адистер компьютердик технологиялардын инновациялык продуктуларын түзүп, аларды өркүндөтө башташат.Бул багыт ар кандай ОС менен иштөөнү изилдөөгө, жаңы программалык продуктуларды түзүүгө, аларды модернизациялоого мүмкүндүк берет, ошондой эле компьютерди тейлөө көндүмдөрүн берет.</p>
+            </p>
+            <h3>Колдонмо математика жана информатика: колдонуу чөйрөсү жана келечеги</h3>
+            <p >Колдонмо математика жана информатика — бул практикалык маселелерди чечүү үчүн математика, информатика, физика,
+                экономика, биология жана башка көптөгөн илимдердин билимдерин бириктирген билим чөйрөсү. Бул макалада колдонмо
+                математика жана информатика ар кандай тармактарда кандайча колдонуларын жана ушул тармактын бүтүрүүчүлөрү үчүн
+                кандай перспективалар бар экендигин карап чыгабыз. 
+                <p class="subtitle"><b> Экономикада колдонмо математика жана информатика</b></p>
+                 Экономикада колдонмо математика жана информатика маалыматтарды
+                талдоо, экономикалык моделдерди иштеп чыгуу жана болжолдоо үчүн колдонулат. Математикалык моделдердин негизинде
+                экономисттер экономикалык өнүгүүнүн ар кандай сценарийлерин баалап, инвестициялоонун мыкты стратегияларын аныктап,
+                кризистик көрүнүштөрдүн себептерин жана кесепеттерин аныктай алышат ж. б.
+                <p class="subtitle"><b>Медицинада колдонмо математика жана информатика</b></p>
+                Медицинада колдонмо математика жана информатика медициналык маалыматтарды талдоо, биологиялык процесстерди
+                    моделдөө жана жаңы дарылоону иштеп чыгуу үчүн колдонулат. Мисалы, математикалык моделдердин жардамы менен
+                    жугуштуу оорулардын жайылышын алдын ала айтууга болот, шишиктердин өсүү динамикасын талдоо, дары-дармектердин
+                    оптималдуу дозаларын аныктоо ж. б.
+                <p class="subtitle"><b>Инженердик колдонмо математика жана информатика</b></p>Мисалы, математикалык методдор жаңы электрондук компоненттерди
+                иштеп чыгууга, унаалардын дизайнын оптималдаштырууга, компьютердик оюндарды түзүүгө ж. б. жардам берет
+                Колдонмо математика жана информатика бүтүрүүчүлөрүнүн келечегиКолдонмо математика жана информатика адистигинин
+                бүтүрүүчүлөрү маалыматтарды талдоо менен байланышкан ар кандай иш чөйрөлөрүндө кеңири жумушка орношушат. Колдонмо
+                математика жана информатика - бул экономика, илим, технология жана башка көптөгөн тармактардагы татаал маселелерди
+                чечүүгө мүмкүндүк берген заманбап жана тез өнүгүп жаткан билим чөйрөлөрү.Бул окуу чөйрөсүн тандоо, ошондой эле
+                азыркы учурда информатика жана математика адистигине чоң суроо-талап бар экендиги менен байланыштуу, бул бөлүмдүн
+                бүтүрүүчүлөрү үчүн туруктуу жана келечектүү карьераны камсыз кылат.
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
 </html>

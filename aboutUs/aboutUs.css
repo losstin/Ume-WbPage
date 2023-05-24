@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.about-container1 {
+    width: 100%;
+    background: linear-gradient(180deg, #40010e, #41000d 50%, #510013);
+
+    padding-top: 4%;
+}
+
+.about-container1-bg {
+    background: url('https://twin-cities.umn.edu/sites/twin-cities.umn.edu/files/styles/desktop/public/hero-AboutUs-1440x500.jpg?itok=q1mLhXaQ') center / cover;
+    width: 94%;
+    min-height: 50%;
+    margin: auto;
+    padding: 4%;
+
+}
+
+.about-container1-block {
+    width: 45%;
+    padding: 3%;
+    background: #fff;
+    position: relative;
+
+}
+
+.about-container1-block .yellow-stick {
+    width: 25%;
+    height: 5%;
+    background: #fc3;
+    position: absolute;
+    top: -2.5%;
+    left: 38%;
+}
+
+.about-container1-block h1 {
+    text-align: center;
+}
+
+.about-container1-block p {
+    max-width: 64ch;
+    font-size: .85em;
+}
+
+@media(max-width: 998px) {
+    .about-container1-block {
+        width: 95%;
+        margin: auto;
+        margin-top: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Maksatybyz */
+
+.goal {
+    width: 100%;
+    background: #F0E3CB;
+}
+
+.goal h1 {
+    margin: 2% auto;
+    color: #500;
+    text-align: center;
+    padding: 35px 0;
+    font-size: 35px;
+    background: #F0E3CB;
+    width: 100%;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.goal article {
+    width: 65%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    text-indent: 1.5rem;
+}
+
+.goal article p {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: .5rem 0;
+    line-height: 1.5rem;
+}
+
+.goal blockquote {
+    background: #F0E3CB;
+    padding: 15px;
+    margin: 45px auto;
+    overflow: hidden;
+    width: 70%;
+}
+
+.goal .tag-container {
+    background: #F0E3CB;
+    float: left;
+    margin: -15px 0 10px 0;
+    width: 90px;
+    height: 100px;
+    clip-path: polygon(100% 0, 100% 100%, 50% 75%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.goal .tag {
+    float: left;
+    margin: -15px 0 15px 0;
+    width: 60px;
+    height: 100px;
+    background-color: #500;
+    clip-path: polygon(100% 0, 100% 100%, 50% 75%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.goal .tag h2 {
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    text-indent: 0;
+}
+
+.goal blockquote p {
+    margin-left: 30px;
+    padding: 10px 15px 0 0;
+    text-indent: 0;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 998px) {
+    .about-container1-block {
+        width: 100%;
+    }
+
+    /* Maksatybyz */
+    .goal article {
+        width: 100%;
+    }
+    .goal blockquote {
+        width: 89%;
+    }
+}

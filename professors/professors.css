@@ -20,6 +20,7 @@ p.p-red {
 h2.heading-pro{
     color: #000;
     text-align: center;
+    text-transform: uppercase;
 }
 .column-pro1 {
     flex-basis: 20%;
@@ -46,16 +47,16 @@ h2.heading-pro{
 }
 .image-radius {
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 155px;
+    height: 155px;
     border: 1px solid gray;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .image-radius img {
-    width: 129px;
-    height: 129px;
+    width: 141px;
+    height: 141px;
     border-radius: 100%;
     margin: auto;
 }
@@ -71,9 +72,9 @@ h2.heading-pro{
 }
 div.hr {
     margin-top: 5%;
-    height: 1px;
+    height: 2px;
     background: gray;
-    width: 80%;
+    width: 100%;
     
 }
 @media (max-width: 732px){
