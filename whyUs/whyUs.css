@@ -48,6 +48,6 @@
 
 .banner {
   color: white;
-  background: url('https://img.freepik.com/free-photo/people-graduating-with-diplomas-close-up_23-2148950542.jpg?w=900&t=st=1684766077~exp=1684766677~hmac=eacc72e0afc063991fad4848ba340b89d343dea5d4b802dab5a1904eda75f863') top left/cover no-repeat;
-  height: 300px;
+  background: url('../src/img/ume-teacher.jpg') center /cover no-repeat;
+  height: 400px;
 }

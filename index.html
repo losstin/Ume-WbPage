@@ -37,133 +37,99 @@
 	<noscript aria-hidden="true"><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-53LFZF" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 	
 	<div class="off-canvas-wrap">
-		<div aria-label="header" class="fixed off-canvas-fixed" role="navigation">
-			<a class="skipnav js-skipnav sr-only" href="#contentarea">Skip Navigation</a>
-
-			<div class="site-title" id="site-title">
-				<div class="row site-title-layout">
-					<section aria-label="Site Title" class="site-title-name">
-						<div class="manas">
-							<a href="../index.html">Манас университети</a>
-						</div>
-					</section>
-
-					<div id="search-header">
-						
+		<header class="header">
+			<nav class="navbar">
+				<div class="top-nav">
+					<div class="top-left">
+						<span>МАНАС УНИВЕРСИТЕТИ</span>
+					</div>
+					<div class="top-right">
+						<span>КМИ БОЛУМУ</span>
 					</div>
 				</div>
-			</div>
-
-			<div class="nav-wrapper">
-				<nav aria-label="navigation" class="top-bar" data-topbar="topbar">
-					<div class="title-area">
-						<div class="left-off-canvas-toggle menu-icon svg-menu-icon">
-							<button aria-expanded="false">
-								<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
-									title="menu">
-									<use title="menu"
-										xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--menu"
-										xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-								</svg>
-
-							
-							</button>
+				<div class="middle-nav">
+					<div class="middle-left">
+						<a href="http://obis.manas.edu.kg/">Жеке кабинет</a>
+						<a href="index.html">Башкы бет</a>
+						<a href="./aboutUs/aboutUs.html">Биз жөнүндө</a>
+					</div>
+					<div class="middle-center">
+						<div class="logo-box">
+							<img src="https://manas.edu.kg/upload/logo/Manas_logo.png" alt="">
 						</div>
 					</div>
-					<div class="header-logo">
-						<div>
-							<a href="index.html">
-								<img alt="University Logo" src="./src/img/Manas_logo.png" width="80%" />
-							</a>
+					<div class="middle-right">
+						<a href="./students/students.html">Студенттер</a>
+						<a href="./whyUs/whyUs.html">Эмне үчүн КМИ?</a>
+						<a href="http://timetable.manas.edu.kg/department">Жадыбал</a>
+					</div>
+
+					<div class="nav-responsive">
+						<ul class="nav-menu-responsive">
+							<li>
+								<a href="http://obis.manas.edu.kg/">Жеке кабинет</a>
+							</li>
+							<li>
+								<a href="index.html">Башкы бет</a>
+							</li>
+							<li>
+								<a href="./aboutUs/aboutUs.html">Биз жөнүндө</a>
+							</li>
+							<li>
+								<a href="./students/students.html">Студенттер</a>
+							</li>
+							<li>
+								<a href="./whyUs/whyUs.html">Эмне үчүн КМИ?</a>
+							</li>
+							<li>
+								<a href="http://timetable.manas.edu.kg/department">Жадыбал</a>
+							</li>
+						</ul>
+						<div class="hamburger">
+							<span class="bar"></span>
+                			<span class="bar"></span>
+                			<span class="bar"></span>
 						</div>
 					</div>
-					<a aria-controls="search" aria-expanded="false" aria-label="View search form"
-						class="icon-search-svg large-icon mobile-search show-for-small-only" tabindex="0">
-						<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
-							<use title="search"
-								xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-								xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-						</svg>
-						<strong>
-							<span class="sr-only">Search</span>
-						</strong>
-					</a>
-					<section aria-label="main navigation" class="top-bar-section show-for-large-up" role="navigation">
-						<ul class="left">
-							<li><a href="#site-title">Башкы бет</a></li>
-							<li><a href="./aboutUs/aboutUs.html">Биз жөнүндө</a></li>
-						</ul>
-						<ul class="right">
-							<li><a href="./students/students.html">Студенттер</a></li>
-							<li><a href="./whyUs/whyUs.html">Эмне үчүн КМИ?</a></li>
-						</ul>
-					</section>
-					<a aria-controls="search" aria-expanded="false" aria-label="View search form"
-						class="icon-search-svg large-icon mobile-search show-for-medium-down" href="#search"
-						id="search-label">
-						<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
-							<use title="search"
-								xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-								xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-						</svg>
-						<span class="sr-only" style="color:#ffffff;">Search</span>
+				</div>
+				<div class="sub-nav">
+					
+					<div class="sub-container">
+						<i class="fa-solid fa-bars" onclick="showMenu()"></i>
 
-					</a>
-				</nav>
-			</div>
-			<nav aria-label="audience navigation" class="audience">
-				<section aria-label="navigation by audience" class="show-for-large-up" role="navigation">
-					<ul>
-						<li>
-							<a href="./professors/professors.html">Мугалимдер</a>
-						</li>
-						<li>
-							<a href="./graduates/graduates.html">Бүтүүрүчүлөр</a>
-						</li>
-						<li>
-							<a href="./admissions/admissions.html">Абитуриенттерге</a>
-						</li>
-						
-					</ul>
-				</section>
+						<a href="./professors/professors.html">Мугалимдер</a>
+						<a href="./graduates/graduates.html">Бутуруучулор</a>
+						<a href="https://yordam.manas.edu.kg/yordam/">Онлайн китепкана</a>
+					</div>
+				</div>
 			</nav>
-		</div>
+		</header> 
+		
 		<main class="inner-wrap" id="contentarea" tabindex="-1">
 			<!-- FLYOUT START -->
 
 			<!-- FLYOUT END -->
 			<a class="exit-off-canvas"></a>
 
-
-			<section aria-label="academics links" class="academics--background" id="spotlight">
-				<div class="spotlight-layout row">
-					<div class="spotlight-panel">
-						<h1 class="page-title"><em>Колдонмо математика жана информатика бөлүмү</em></h1>
-						<nav aria-label="quick links" role="complementary">
-							<ul class="page-side-nav">
-								<li ><a href="#index.html">Башкы бет</a></li>
-								<li ><a href="http://obis.manas.edu.kg/">Жеке кабинет</a></li>
-								<li ><a href="http://timetable.manas.edu.kg/department">Жумалык план</a></li>
-								<li ><a href="./professors/professors.html">Кызматкерлер</a></li>
-								
-							</ul>
-						</nav>
+			<div class="video-wrapper">
+				<div class="bg-video">
+					
+					<div class="text-overlay1">
+						<p class="p">Кош келиниздер</p>
+						<h1 class="h1">Колдонмо математика жана информатика</h1>
 					</div>
 				</div>
-			</section>
-			<div class="hide-for-small-only" id="breadcrumb">
-				<div class="row">
-					<ul class="breadcrumbs">
-						<li><a href="/index.html">Башкы бет</a></li>
-						<li class="current"><a href="./admissions/admissions.html">Абитуриент</a></li>
-					</ul>
-				</div>
-			</div>
+	
+			</div> 
+			
+			
+
+			
 			<section aria-label="academic calendar" class="tan-background" id="cal-area">
 				<div class="cal-header">
 					<div class="cal-header-content">
 						<div class="cal-header-title">
-							<h2 class="serif u-font-size-md"><em id="searchItem">Жаңылыктар</em></h2>
+							<h2 class="serif u-font-size-md"><em id="searchItem">Академия</em></h2>
 						</div>
 						<div class="cal-header-links text-right">
 							<p class="h3 cal-header-link"><a class="maroon show-for-small-only calendar-toggle"><span
@@ -333,6 +299,10 @@
 								<li>  MATLAB</li>
 								<li>Corel DRAW</li>
 								<li>Adobe Photoshop CS6 </li>
+								<li> Visual Studio</li>
+								<li> Visual Studio Code</li>
+								<li> PyCharm</li>
+	
 							</ul>
 						</div>
 						<div class="content-image hide-for-small-only"><img
@@ -346,13 +316,13 @@
 				<div class="content-blocks">
 					<div class="content-layout content-right">
 						<div class="infographic maroon-circle medium-4 columns"><span class="number">100+</span><br />
-							<span class="info-text">студенттер</span><br /><span class="number">15+</span><br /> <span
+							<span class="info-text">студенттер</span><br /><span class="number">10+</span><br /> <span
 								class="info-text">мугалимдер</span>
 						</div>
-						<div class="medium-6 columns">
-							<h2 class="up" id="searchItem">Программалоо</h2>
-							<p>Работа с цветами и эффектами, фотомонтаж, ретушь, реставрация, коллаж, фото слияния и
-								создания HDR панорамные фотографии
+						<div class="medium-6 columns" >
+							<h2 class="up" id="searchItem" style="margin-left: 30px;">Программалоо</h2>
+							<p style="padding-left: 30px;">Тустор жана эффекттер менен иштоо, фотомонтаж, ретушь, реставрация, коллаж,
+						  HDR панорамдык суроттор.
 								Ар кандай өңдөр менен жана эффекттер менен иштөө, фотомонтаж, ретушь, реставрация,
 								коллаж, фотону бириктирип HDR панорамалык фотографияларды алуу.
 								Буклеттерди,визиткаларды жана чакыруу кагаздарын басмага даярдоо.
@@ -372,7 +342,7 @@
 				<div class="content-blocks">
 					<div class="content-layout">
 						<div class="content-text">
-							<h2 class="up" id="searchItem">академиялык</h2>
+							<h2 class="up" id="searchItem">Билим беруу</h2>
 							<p>Математикалык методдорду маалыматтарды моделдөө менен жана колдонмо маселер менен
 								байланышкан имитациондук моделдер менен изилдөө.
 								Компьютердик тармактардын коопсуздугун жана каражаттарды админдик башкаруу ,
@@ -466,9 +436,9 @@
                     <h2 class="up title-bg"><span>Байланыш үчүн</span></h2>
                 </div>
             </div>
-            <h6 style="text-align: center; margin-top: 20px;"> ✉: 720044, Bişkek, KIRGIZİSTAN Cengiz Aytmatov
-                Caddesi
-                56 ☎: +996(312)54 19 42-46 Fax: +996(312)54 19 35 © KTMÜ</h6>
+            <h6 style="text-align: center; margin-top: 20px;"> ✉: 720044, Бишкек, КЫРГЫЗСТАН Чынгыз Айтматов 56
+                
+				☎: +996(312)54 19 42-46 Fax: +996(312)54 19 35 © KTMÜ</h6>
             <div class=" content-layout">
                 <div class="med-12 columns">
                     <!-- Stackla Widget Embed Code (start) -->
@@ -595,9 +565,7 @@
                 </div>
                 <div class="row">
                     <div class="small-12 columns">
-                        <a class="border-button border-button-white show-for-small up" href="#contentarea">Back to
-                            top
-
+                        <a class="border-button border-button-white show-for-small up" href="#contentarea">Баштапкы меню
                             <span aria-hidden="true" class="icon-back-to-top"></span>
                         </a>
                     </div>
@@ -608,6 +576,7 @@
 	</div>
 	<script src="./js/index.js"></script>
 	<script src="./js/search.js"></script>
+	<script src="./js/burger.js"></script>
 	<script src="../assets/js/vendor/fastclick.min.js" type="text/javascript"></script>
 	<script src="../assets/js/main.min.js" type="text/javascript"></script>
 	<script src="../assets/js/vendor/jquery.jcarousel.min.js" type="text/javascript"></script>

@@ -14,191 +14,42 @@
 
 <body>
     <div class="off-canvas-wrap">
-        <div aria-label="header" class="fixed off-canvas-fixed" role="navigation">
-			<a class="skipnav js-skipnav sr-only" href="#contentarea">Skip Navigation</a>
-
-			<div class="site-title" id="site-title">
-				<div class="row site-title-layout">
-					<section aria-label="Site Title" class="site-title-name">
-						<div class="manas">
-							<a href="../index.html">Манас университети</a>
-						</div>
-					</section>
-
-					<div id="search-header">
-						<section aria-label="search site" class="site-title-search">
-							<div class="search-title">
-								<span class="custom-dropdown big">
-									<label class="sr-only" for="search-options">Search Options</label>
-									<select id="search-options" name="search-options"></select>
-								</span>
-							</div>
-
-							<form _lpchecked="1" >
-								<div class="search-field">
-									<label class="sr-only" for="searchfield" id="searchfield-label">Search</label>
-									<input aria-labelledby="searchfield-label" id="searchfield" name="cn" placeholder="Издөө..." type="text" />
-								</div>
-								<div class="search-button">
-									<button aria-label="submit search" class="c-button-maroon" type="submit" id="search-btn">										
-										<i class="fa-solid fa-magnifying-glass"></i>
-										<span class="sr-only" style="color:#ffffff;">Search</span>
-									</button>
-								</div>
-							</form>
-						</section>
+        <header class="header">
+			<nav class="navbar">
+				<div class="top-nav">
+					<div class="top-left">
+						<span>МАНАС УНИВЕРСИТЕТИ</span>
+					</div>
+					<div class="top-right">
+						<span>КМИ БОЛУМУ</span>
 					</div>
 				</div>
-			</div>
-
-			<div class="nav-wrapper">
-				<nav aria-label="navigation" class="top-bar" data-topbar="topbar">
-					<div class="title-area">
-						<div class="left-off-canvas-toggle menu-icon svg-menu-icon">
-							<button aria-expanded="false">
-								<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
-									title="menu">
-									<use title="menu"
-										xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--menu"
-										xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-								</svg>
-
-							
-							</button>
+				<div class="middle-nav">
+					<div class="middle-left">
+						<a href="http://obis.manas.edu.kg/">Жеке кабинет</a>
+						<a href="../index.html">Башкы бет</a>
+						<a href="../aboutUs/aboutUs.html">Биз жөнүндө</a>
+					</div>
+					<div class="middle-center">
+						<div class="logo-box">
+							<img src="https://manas.edu.kg/upload/logo/Manas_logo.png" alt="">
 						</div>
 					</div>
-					<div class="header-logo">
-						<div>
-							<a href="index.html">
-								<img alt="University Logo" src="../src/img/Manas_logo.png" width="80%" />
-							</a>
-						</div>
+					<div class="middle-right">
+						<a href="../students/students.html">Студенттер</a>
+						<a href="../whyUs/whyUs.html">Эмне үчүн КМИ?</a>
+						<a href="http://timetable.manas.edu.kg/department">Жадыбал</a>
 					</div>
-					<a aria-controls="search" aria-expanded="false" aria-label="View search form"
-						class="icon-search-svg large-icon mobile-search show-for-small-only" tabindex="0">
-						<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
-							<use title="search"
-								xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-								xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-						</svg>
-						<strong>
-							<span class="sr-only">Search</span>
-						</strong>
-					</a>
-					<section aria-label="main navigation" class="top-bar-section show-for-large-up" role="navigation">
-						<ul class="left">
-							<li><a href="../index.html">Башкы бет</a></li>
-							<li><a href="../aboutUs/aboutUs.html">Биз жөнүндө</a></li>
-						</ul>
-						<ul class="right">
-							<li><a href="../students/students.html">Студенттер</a></li>
-							<li><a href="../whyUs/whyUs.html">Эмне үчүн КМИ?</a></li>
-						</ul>
-					</section>
-					<a aria-controls="search" aria-expanded="false" aria-label="View search form"
-						class="icon-search-svg large-icon mobile-search show-for-medium-down" href="#search"
-						id="search-label">
-						<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation" title="search">
-							<use title="search"
-								xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-								xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-						</svg>
-						<span class="sr-only" style="color:#ffffff;">Search</span>
-
-					</a>
-				</nav>
-			</div>
-			<nav aria-label="audience navigation" class="audience">
-				<section aria-label="navigation by audience" class="show-for-large-up" role="navigation">
-					<ul>
-						<li>
-							<a href="../professors/professors.html">Мугалимдер</a>
-						</li>
-						<li>
-							<a href="../graduates/graduates.html">Бүтүүрүчүлөр</a>
-						</li>
-						<li>
-							<a href="../admissions/admissions.html">Абитуриенттерге</a>
-						</li>
-						
-					</ul>
-				</section>
+				</div>
+				<div class="sub-nav">
+					<div class="sub-container">
+						<a href="../professors/professors.html">Мугалимдер</a>
+						<a href="../graduates/graduates.html">Бутуруучулор</a>
+						<a href="https://yordam.manas.edu.kg/yordam/">Онлайн китепкана</a>
+					</div>
+				</div>
 			</nav>
-
-
-			<div aria-hidden="true" id="search">
-				<div class="search-layout">
-					<div class="centered-content">
-						<div class="search-layout-content">
-							<div class="search-title">
-								<span class="custom-dropdown big">
-									<label class="sr-only" for="search-options-mobile">Search Options</label>
-									<select id="search-options-mobile" name="search-options">
-										<option>Web</option>
-										<option>People</option>
-									</select>
-								</span>
-							</div>
-							<form action="../search/index.html" method="get">
-								<div class="search-field">
-									<input aria-labelledby="searchfieldmobile-label" id="searchfieldmobile" name="q"
-										placeholder="Search..." type="text" />
-									<label class="sr-only" for="searchfieldmobile"
-										id="searchfieldmobile-label">Search</label>
-
-								</div>
-								<div class="search-button">
-									<button aria-label="Search" class="button secondary radius postfix" type="submit">
-										<svg aria-hidden="true" class="icon button__trailing-icon" role="presentation"
-											title="search">
-											<use title="search"
-												xlink:href="../assets/images/sprites/svg-sprite-custom-symbol.svg#design--search"
-												xmlns:xlink="http://www.w3.org/1999/xlink"> </use>
-										</svg>
-										<span class="sr-only" style="color:#ffffff;">Search</span>
-									</button>
-								</div>
-							</form>
-							<button class="search-close-button js-close-search" type="button">Close Search</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Appearing sub menu -->
-			<div aria-hidden="true" aria-label="academics quick links" class="submenu-appear hide-for-small-only">
-				<div class="row">
-					<ul class="sub-nav">
-						<li><a href="#undergrad-edu" tabindex="-1">Undergraduate Education</a></li>
-						<li><a href="#depts-progs" tabindex="-1">Departments and Programs</a></li>
-						<li><a href="#grad-edu" tabindex="-1">Graduate &amp; Professional Education</a></li>
-						<li><a href="#int-edu" tabindex="-1">International Education</a></li>
-						<li><a href="#library" tabindex="-1">Libraries</a></li>
-					</ul>
-				</div>
-			</div><!-- / End sub menu -->
-			<aside aria-hidden="true" aria-label="mobile navigation" class="left-off-canvas-menu" id="offcanvas-menu">
-				<ul class="off-canvas-list" id="mainlinks">
-					<li><label>Menu</label></li>
-					<li><a href="/index.html">Home</a></li>
-					<li><a href="../about/index.html">About</a></li>
-					<li><a href="../admissions/index.html">Admissions</a></li>
-					<li><a href="index.html">Academics</a></li>
-					<li><a href="../athletics/index.html">Athletics</a></li>
-					<li><a href="../research/index.html">Research</a></li>
-					<li><a href="../student-life/index.html">Student Life</a></li>
-				</ul>
-				<ul class="off-canvas-list off-canvas-sublist">
-					<li><label>Info For:</label></li>
-					<li><a href="../future-students/index.html">Future Students</a></li>
-					<li><a href="../current-students/index.html">Current Students</a></li>
-					<li><a href="../faculty-staff/index.html">Faculty &amp; Staff</a></li>
-					<li><a href="../parents/index.html">Parents</a></li>
-					<li><a href="../visitors/index.html">Visitors</a></li>
-					<li><a href="../former-students/index.html">Former Students</a></li>
-					<li><a href="https://www.txamfoundation.com/" tabindex="0">Make a Gift</a></li>
-				</ul>
-			</aside>
-		</div>
+		</header>
         <main class="inner-wrap" id="contentarea" tabindex="-1">
             <!-- FLYOUT START -->
 
@@ -329,7 +180,7 @@
                     <div class="container-flex">
                         <div class="column-pro1">
                             <div class="image-radius">
-                                <img src="./img/Gulshat.jpg" alt="">
+                                <img src="https://pps.whatsapp.net/v/t61.24694-24/340849639_193435720155888_3896906561379493364_n.jpg?ccb=11-4&oh=01_AdT1mqK9Htu76n9rVDS8Pyh43eHBX39dy33v_2RcT68WaQ&oe=647BFF97" alt="">
                             </div>
                         </div>
                         <div class="column-pro2">
@@ -448,6 +299,131 @@
                    <div></div>
             </div> 
         </main>
+        <div aria-label="subfooter" id="subfooter" role="contentinfo">
+
+            <div class="section-header-content">
+                <div class="section-header-title">
+                    <div class="title-bg" id="socialLinks" itemscope="itemscope"
+                        itemtype="http://schema.org/Organization">
+                        <span class="sr-only" itemprop="name">Манас Университет</span>
+                        <span class="sr-only" itemprop="telephone">979-845-3211</span>
+                        <span class="sr-only" itemprop="address" itemscope="itemscope"
+                            itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="addressLocality">College Station</span>
+                            <span itemprop="addressRegion">TX</span>
+                            <span itemprop="postalCode">77843</span>
+                            <span itemprop="addressCountry">USA</span>
+                        </span>
+                        <link href="https://www.manas.edu/" itemprop="url" target="_parent" />
+                        <a href="https://www.facebook.com/manas" id="Facebook" itemprop="sameAs"
+                            title="manas facebook">
+                            <span class="sr-only">Manas Facebook</span>
+                            <span aria-hidden="true" aria-label="Manas Facebook" class="fab fa-facebook"
+                                title="Manas Facebook"></span>
+                        </a>
+    
+                        <a href="https://www.instagram.com/manas/" id="Instagram" itemprop="sameAs"
+                            title="manas instagram">
+                            <span class="sr-only">Manas Instagram</span>
+                            <span aria-hidden="true" aria-label="Manas Instagram" class="fab fa-instagram"
+                                title="Manas Instagram"></span>
+                        </a>
+    
+                        <a href="https://www.linkedin.com/edu/school?id=19491" id="Linkedin" itemprop="sameAs"
+                            title="manas linkedin">
+                            <span class="sr-only">Manas LinkedIn</span>
+                            <span aria-hidden="true" aria-label="Manas Linkedin" class="fab fa-linkedin"
+                                title="Manas Linkedin"></span>
+                        </a>
+    
+                        <a href="https://www.youtube.com/manas" id="Youtube" itemprop="sameAs" title="manas youtube">
+                            <span class="sr-only">Manas Youtube</span>
+                            <span aria-hidden="true" aria-label="Manas YouTube" class="fab fa-youtube"
+                                title="Manas YouTube"></span>
+                        </a>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-layout">
+                <div class="row footer-main">
+                    <div class="small-12 medium-3 columns">
+                        <div class="text-center">
+                            <a href="/index.html">
+                                <img alt="Manas" class="footer-logo" src="../src/img/Manas_logo.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-3 columns">
+                        <ul class="footer-list">
+                            
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+996 (312) 54 19 41-47"> +996 (312) 54 19 41-47</a>
+                            </li> 
+                                <i i class="fa-sharp fa-regular fa-fax"></i>
+                                <a href="tel:+996 (312) 54 19 35"> +996 (312) 54 19 35</a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/maps/@42.8392212,74.5548393,15z">Кампус им. Ч.Айтматова (Джал), 720038, Бишкек, Кыргызстан</a>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-envelope"></i>
+                                <a href="https://www.manas.edu.kg/ru/index.php">info@manas.edu.kg</a>
+                            </li>
+    
+                            <li>
+                                &#169;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All Rights Reserved. Privacy Policy
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="small-12 medium-3 columns">
+                        <ul class="footer-list footer-list-gray">
+                            <li>
+                                <a href="https://www.facebook.com/manasuniv/" id="Facebook" itemprop="sameAs"
+                                    title="MANAS facebook">
+                                    <span class="sr-only">MANAS Facebook</span>
+                                    <span aria-hidden="true" aria-label="MANAS Facebook" class="fab fa-facebook"
+                                        title="MANAS Facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/manasuniv/?hl=ru" id="Instagram" itemprop="sameAs"
+                                    title="MANAS instagram">
+                                    <span class="sr-only">MANAS Instagram</span>
+                                    <span aria-hidden="true" aria-label="MANAS Instagram" class="fab fa-instagram"
+                                        title="MANAS Instagram"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/manas-university/?originalSubdomain=ru" id="Linkedin"
+                                    itemprop="sameAs" title="manas linkedin">
+                                    <span class="sr-only">Manas LinkedIn</span>
+                                    <span aria-hidden="true" aria-label="Manas Linkedin" class="fab fa-linkedin"
+                                        title="MANAS Linkedin"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <a class="border-button border-button-white show-for-small up" href="#contentarea">Back to
+                            top
+    
+                            <span aria-hidden="true" class="icon-back-to-top"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
         
     </div>
 </body>

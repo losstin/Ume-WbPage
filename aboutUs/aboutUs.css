@@ -13,7 +13,7 @@
 }
 
 .about-container1-bg {
-    background: url('https://twin-cities.umn.edu/sites/twin-cities.umn.edu/files/styles/desktop/public/hero-AboutUs-1440x500.jpg?itok=q1mLhXaQ') center / cover;
+    background: url('../src/img/fen.JPG') center / cover;
     width: 94%;
     min-height: 50%;
     margin: auto;
