@@ -6001,11 +6001,7 @@ select{
 			 background-position:20% 10%;
 		}
 	}
-	 .athletics--background{
-		 background-image:url('../images/hero/athletics--spotlight.jpg');
-		 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$imgpath', sizingMethod='scale');
-		 -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$imgpath', sizingMethod='scale')" 
-	}
+	 
 	 @media only screen and (min-width:43.913em){
 		 .athletics--background{
 			 background-position:50% 50%;
