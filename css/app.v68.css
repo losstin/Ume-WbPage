@@ -11706,7 +11706,7 @@ select{
 	 text-decoration: none;
 	 border-bottom: 1px solid;
 	 color: #000000;
-	 font-weight: bold;
+	 font-weight: bold; 
 	 font-family:"Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 	 font-size: 1rem;
 }
@@ -11859,22 +11859,9 @@ select{
 			display: inline-block;
 		}
 		
-	
-		.sub-nav .fa-bars {
-			/* display: block; */
-		}
-		.navbar {
-			margin-top: 50px;
-		}
-		
 		.middle-left a, .middle-right a {
 			font-size: 15px !important;			
 		}
-		/* .middle-center{
-			display: none !important;
-			visibility: hidden !important;
-		} */
-		
 		.flexcol {
 			display: flex;
 			flex-direction: column;
@@ -11884,13 +11871,15 @@ select{
 		.sub-nav {
 			height: 50%;
 		}
-		/* .middle-center   {
-			display: none;
-		} */
 		.middle-left a, .middle-right a, .top-left span, .sub-container a {
 			display: block;
 		}
 	
+}
+@media only screen and (max-width: 1024px){
+	.navbar {
+		margin-top: 50px;
+	}
 }
 
 @media only screen and (max-width: 924px) {
@@ -11901,9 +11890,6 @@ select{
 	.middle-left, .middle-right {
 		display: none !important;
 	}
-
-	
-
 	.middle-nav {
 		justify-content: flex-start !important;
 	}
@@ -11927,29 +11913,77 @@ select{
 	.hamburger {
 		display: block;
 		right: 22px;
-		top: 20px;
+		top: 50%;
+		transform: translate(-50%, -50%);
 		position: absolute;
 	}
 
 	.bar {
 		display: block;
-		width: 25px;
+		width: 40px;
 		height: 3px;
-		margin: 5px auto;
+		margin: 8px auto;
 		-webkit-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
-		background-color: #101010;
-		color: #fff !important;
+		background-color: #fff;
 		font-weight: 500;
+	}
+	.text-overlay1 {
+		padding: 8% 3% !important;
+	}
+	h1.h1 {
+		margin: 10px;
+		font-size: 30px !important;
+	}
+	p.p {
+		font-size: 20px;
 	}
 
 	.nav-menu-responsive.active {
 		display: flex;
     }
+	.logo-box {
+		box-shadow: none !important;
+	}
+	.logo-box img {
+		height: 80px;
+		width: 80px !important;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-
+	.sub-container {
+		display: flex;
+		justify-content: space-between !important;
+	}
+}
+@media only screen and (max-width: 702px){
+	.navbar {
+		margin: auto;
+	}
+	.sub-container {
+		max-width: 0 5px;
+	}
+	#int-edu .infographic.maroon-circle.columns{
+		margin: 20px auto; 
+   }
+	.bg-video {
+		height: 70vh !important;
+	}
+	.text-overlay1 {
+		padding: 3% 3% !important;
+	}
+	h1.h1 {
+		margin: 10px;
+		font-size: 25px !important;
+	}
+	p.p {
+		font-size: 20px;
+	}
+	.logo-box img {
+		width: 70px !important;
+		height: 70px;
+	}
 }
 .search-field {
 display: none;
@@ -12026,9 +12060,7 @@ h3.sans {
 
 
 /* MEDIA */
-@media (max-width: 1060px){
 
-}
 .top-bar svg,
 .svg-menu-icon svg,
 .menu-icon svg {
@@ -12059,6 +12091,9 @@ h3.sans {
 	display: inline-block;
 }
 @media only screen and (min-width: 43.913em) {
+	button, .button {
+		display: inline-block;
+	}
 	.top-bar button {
 		top: -1px;
 		font-size: 1rem;
@@ -12104,11 +12139,7 @@ h3.sans {
 	margin-right: 5%;
 	margin-bottom: 5%;
 }
-@media only screen and (min-width:43.913em) {
-	button, .button {
-		display: inline-block;
-	}
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Montserrat&family=Poppins:wght@500&display=swap');
 *{
     margin: 0;
@@ -12202,7 +12233,9 @@ text-align: center  ;
 	display: none;
 }
 .sub-container {
-    width: 48%;
+    width: 500px;
+	max-width: 90%;
+	margin: auto;
     height: 100%;
     margin: auto;
     display: flex;
